@@ -19,6 +19,7 @@ const locationController = require("./routes/locationController");
 mongoose.connect(process.env.MONGOLAB_URI, { useMongoClient: true });
 // Middlewares configuration
 app.use(logger("dev"));
+//test
 
 // View engine configuration
 app.set("views", path.join(__dirname, "views"));
