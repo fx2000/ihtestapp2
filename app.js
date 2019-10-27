@@ -16,7 +16,7 @@ const siteController     = require("./routes/siteController");
 const locationController = require("./routes/locationController");
 
 // Mongoose configuration
-mongoose.connect(process.env.MONGOLAB_URI, { useMongoClient: true });
+mongoose.connect(process.env.MONGODB_URI,  { useNewUrlParser: true });
 // Middlewares configuration
 app.use(logger("dev"));
 //test
