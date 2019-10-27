@@ -16,10 +16,9 @@ const siteController     = require("./routes/siteController");
 const locationController = require("./routes/locationController");
 
 // Mongoose configuration
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/deploy-exercise');
+mongoose.connect(process.env.MONGOLAB_URI);
 // Middlewares configuration
 app.use(logger("dev"));
-//test
 
 // View engine configuration
 app.set("views", path.join(__dirname, "views"));
